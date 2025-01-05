@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Application prise de note</h1>
+    <form>
+        <label for="titre">Ajouter une note</label>
+        <br>
+        <input type="text" id="titre" name="titre" placeholder="Entrez un titre ici" required>    
+        <textarea id="note" name="note" placeholder="Ecrivez votre note ici" required></textarea>
+        <select id="colorSelect">
+            <option value="red" style="background-color: red;">&nbsp;&nbsp;&nbsp;</option>
+            <option value="green" style="background-color: green;">&nbsp;&nbsp;&nbsp;</option>
+            <option value="blue" style="background-color: blue;">&nbsp;&nbsp;&nbsp;</option>
+            <option value="yellow" style="background-color: yellow;">&nbsp;&nbsp;&nbsp;</option>
+            <option value="violet" style="background-color: violet;">&nbsp;&nbsp;&nbsp;</option>
+        </select>
+        <button type="submit">Enregistrer</button>
+    </form>
 </body>
 </html>
